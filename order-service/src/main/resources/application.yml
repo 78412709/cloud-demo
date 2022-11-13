@@ -22,8 +22,6 @@ logging:
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
 
-
-
 #eureka:
 #  client:
 #    service-url:
