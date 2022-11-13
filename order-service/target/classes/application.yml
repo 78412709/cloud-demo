@@ -1,0 +1,31 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_order?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    #    微服务的昵称
+    name: orderservice
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+mybatis:
+  type-aliases-package: cn.itcast.user.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    cn.itcast: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+
+
+
+#eureka:
+#  client:
+#    service-url:
+#      #      地址信息
+#      defaultZone: http://localhost:10086/eureka
