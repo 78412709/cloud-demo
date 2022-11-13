@@ -6,13 +6,6 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-  application:
-    #    微服务的昵称
-    name: userservice
-#  nacos服务地址
-  cloud:
-    nacos:
-      server-addr: localhost:8848
 
 mybatis:
   type-aliases-package: cn.itcast.user.pojo

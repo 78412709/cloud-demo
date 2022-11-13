@@ -22,6 +22,16 @@ logging:
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
 
+#feign日志配置
+feign:
+#  client:
+#    config:
+#      default:
+#        logger-level: BASIC
+  httpclient:  # http连接池
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
 
 
 #eureka:
